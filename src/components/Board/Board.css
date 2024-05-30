@@ -1,0 +1,43 @@
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+}
+
+.board-row {
+    display: flex;
+}
+.board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.square {
+    width: 120px;
+    height: 120px;
+    background: #00f7ff;
+    border: 1px solid #00a6ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    cursor: pointer;
+    color: black;
+    border-radius: 0;
+}
+.square.X {
+    color: #ff4d4d; 
+    font-size: 45px;
+    font-family: 'Arial', sans-serif;
+}
+
+.square.O {
+    color: #1e90ff; 
+    font-size: 45px;
+    font-family: 'Arial', sans-serif;
+}
+
+.square:hover {
+    background: #66f1f8;
+}
